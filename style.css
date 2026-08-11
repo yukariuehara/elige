@@ -344,6 +344,96 @@ img { max-width: 100%; display: block; }
   transform: scale(1.8);
   transform-origin: 50% 8%;
 }
+
+/* ---- Column article ---- */
+
+.article-header {
+  padding: 96px 28px 32px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.article-header .back-link {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  margin-bottom: 28px;
+  transition: color .2s ease;
+}
+.article-header .back-link:hover { color: var(--rose); }
+.article-header .date {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+}
+.article-header h1 {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: clamp(24px, 3.4vw, 30px);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.article-body {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 28px 96px;
+}
+.article-body p {
+  font-size: 16.5px;
+  line-height: 2;
+  color: var(--ink);
+  margin: 0 0 28px;
+}
+.article-body h2 {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.7;
+  margin: 56px 0 24px;
+}
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 32px 0 40px;
+  font-size: 14.5px;
+}
+.article-body th,
+.article-body td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  line-height: 1.7;
+}
+.article-body th {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  font-weight: 500;
+  width: 32%;
+}
+.article-cta {
+  text-align: center;
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
+}
+.article-cta p {
+  color: var(--ink-soft);
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .article-header { padding: 72px 20px 24px; }
+  .article-body { padding: 0 20px 64px; }
+  .article-body th { width: 40%; }
+}
+
 a:focus-visible, button:focus-visible {
   outline: 2px solid var(--rose);
   outline-offset: 3px;
